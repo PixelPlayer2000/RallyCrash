@@ -11,9 +11,10 @@ How to play:
 	Key bindings:
 		accelerate - up key
 		decelerate - down key
-		brake - space bar
+		hand brake - space bar
 		shift up - 'W' key
 		shift down - 'S' key
+		shift into park - 'P' key
 		stear right - right key
 		stear left - left key
 		quit to menu - 'esc' key
