@@ -15,6 +15,6 @@ How to play:
 		shift up - 'W' key
 		shift down - 'S' key
 		shift into park - 'P' key
-		stear right - right key
-		stear left - left key
+		steer right - right key
+		steer left - left key
 		quit to menu - 'esc' key
