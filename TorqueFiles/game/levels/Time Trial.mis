@@ -11,8 +11,8 @@ new SimGroup(MissionGroup) {
       fogAtmosphereHeight = "0";
       canvasClearColor = "0 0 0 255";
          canSaveDynamicFields = "1";
-         levelName = "Empty Room";
-         desc0 = "An empty room ready to be populated with Torque objects.";
+         levelName = "Time Trial";
+         desc0 = "A simple time trial.";
          Enabled = "1";
    };
    new SkyBox(theSky) {
