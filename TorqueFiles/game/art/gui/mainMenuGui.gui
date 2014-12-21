@@ -1,0 +1,130 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiChunkedBitmapCtrl(MainMenuGui) {
+   bitmap = "art/gui/background";
+   useVariable = "0";
+   tile = "0";
+   position = "0 0";
+   extent = "1920 1080";
+   minExtent = "8 8";
+   horizSizing = "width";
+   vertSizing = "height";
+   profile = "GuiDefaultProfile";
+   visible = "1";
+   active = "1";
+   tooltipProfile = "GuiToolTipProfile";
+   hovertime = "1000";
+   isContainer = "1";
+   canSave = "1";
+   canSaveDynamicFields = "1";
+      enabled = "1";
+      isDecoy = "0";
+
+   new GuiTheoraCtrl(Background) {
+      theoraFile = "art/videos/Output0001-1000.ogv";
+      backgroundColor = "0 0 0 255";
+      playOnWake = "1";
+      stopOnSleep = "1";
+      matchVideoSize = "0";
+      renderDebugInfo = "0";
+      transcoder = "Auto";
+      position = "0 0";
+      extent = "1920 1080";
+      minExtent = "8 2";
+      horizSizing = "width";
+      vertSizing = "height";
+      profile = "GuiDefaultProfile";
+      visible = "1";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
+      hovertime = "1000";
+      isContainer = "0";
+      canSave = "1";
+      canSaveDynamicFields = "0";
+   };
+   new GuiControl() {
+      position = "807 424";
+      extent = "306 232";
+      minExtent = "8 2";
+      horizSizing = "center";
+      vertSizing = "center";
+      profile = "GuiDefaultProfile";
+      visible = "1";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
+      hovertime = "1000";
+      isContainer = "1";
+      canSave = "1";
+      canSaveDynamicFields = "0";
+
+      new GuiButtonCtrl() {
+         text = "Play";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "1";
+         position = "9 26";
+         extent = "289 75";
+         minExtent = "8 8";
+         horizSizing = "relative";
+         vertSizing = "bottom";
+         profile = "GuiMenuButtonProfile";
+         visible = "1";
+         active = "1";
+         command = "Canvas.pushDialog(ChooseLevelDlg);";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "0";
+         canSave = "1";
+         canSaveDynamicFields = "0";
+      };
+      new GuiButtonCtrl() {
+         text = "Options";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+         position = "9 104";
+         extent = "289 75";
+         minExtent = "8 8";
+         horizSizing = "relative";
+         vertSizing = "bottom";
+         profile = "GuiMenuButtonProfile";
+         visible = "1";
+         active = "1";
+         command = "Canvas.pushDialog(optionsDlg);";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "0";
+         canSave = "1";
+         canSaveDynamicFields = "0";
+      };
+      new GuiButtonCtrl() {
+         text = "Exit";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+         position = "9 167";
+         extent = "289 75";
+         minExtent = "8 8";
+         horizSizing = "relative";
+         vertSizing = "bottom";
+         profile = "GuiMenuButtonProfile";
+         visible = "1";
+         active = "1";
+         command = "quit();";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "0";
+         internalName = "ExitButton";
+         canSave = "1";
+         canSaveDynamicFields = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
+
+function MainMenuGui::onWake(%this)
+{
+   if (isFunction("getWebDeployment") &&
+       getWebDeployment() &&
+       isObject(%this-->ExitButton))
+      %this-->ExitButton.setVisible(false);
+}

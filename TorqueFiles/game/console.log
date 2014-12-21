@@ -1,0 +1,209 @@
+//-------------------------- 12/21/2014 -- 10:44:35 -----
+Processor Init:
+   Intel Pentium III Xeon, ~2.49 Ghz
+   FPU detected
+   MMX detected
+   SSE detected
+   SSE2 detected
+   HT detected
+   MP detected [2 cores, 4 logical, 1 physical]
+ 
+Math Init:
+   Installing Standard C extensions
+   Installing Assembly extensions
+   Installing FPU extensions
+   Installing MMX extensions
+   Installing SSE extensions
+ 
+Initializing platform...
+Input Init:
+   keyboard0 input device created.
+   mouse0 input device created.
+   DirectInput enabled.
+
+Done
+SFXFMODProvider - Could not locate 'fmodex.dll' or 'fmodexp.dll' - FMOD  not available.
+GFX Init:
+   Direct 3D (version 9.x) device found
+   Null device found
+
+DebugDrawer Enabled!
+--------- Loading DIRS ---------
+
+--------- Parsing Arguments ---------
+Binding server port to default IP
+UDP initialized on port 0
+Attempting to create GFX device: Intel(R) HD Graphics 4000 (D3D9) [\\.\DISPLAY1]
+Device created, setting adapter and enumerating modes
+Win32Window::setVideoMode - invoking curtain
+   Cur. D3DDevice ref count=1
+   Pix version detected: 3.000000
+   Vert version detected: 3.000000
+   Maximum number of simultaneous samplers: 16
+   Number of simultaneous render targets: 4
+   Hardware occlusion query detected: Yes
+   Using Direct3D9Ex: No
+WMIVideoInfo: DxDiag initialized
+Initializing GFXCardProfiler (D3D9)
+   o Chipset : 'INTEL'
+   o Card    : 'Intel(R) HD Graphics 4000'
+   o Version : '10.18.0010.3345'
+   - Scanning card capabilities...
+GFXCardProfiler (D3D9) - Setting capability 'autoMipMapLevel' to 1.
+GFXCardProfiler (D3D9) - Setting capability 'maxTextureWidth' to 8192.
+GFXCardProfiler (D3D9) - Setting capability 'maxTextureHeight' to 8192.
+GFXCardProfiler (D3D9) - Setting capability 'maxTextureSize' to 8192.
+GFXCardProfiler (D3D9) - Setting capability 'lerpDetailBlend' to 1.
+GFXCardProfiler (D3D9) - Setting capability 'fourStageDetailBlend' to 1.
+   - Loading card profiles...
+      - Loaded card profile core/profile/D3D9.cs
+      - No card profile core/profile/D3D9.INTEL.cs exists
+      - No card profile core/profile/D3D9.INTEL.IntelRHDGraphics4000.cs exists
+      - No card profile core/profile/D3D9.INTEL.IntelRHDGraphics4000.101800103345.cs exists
+% - PostFX Manager - Executing core/scripts/client/postFx/default.postfxpreset.cs
+% - PostFX Manager - Applying from preset
+% - PostFX Manager - PostFX enabled
+ % - Initialized Core
+
+--------- Initializing Directory: scripts ---------
+sfxStartup...
+SFXSystem::createDevice - created DirectSound device 'Speakers (Realtek High Definition Audio)'
+SFXDSDevice::setDistanceModel - 'linear' distance attenuation not supported by DirectSound
+   Provider: DirectSound
+   Device: Speakers (Realtek High Definition Audio)
+   Hardware: No
+   Buffers: 16
+
+--------- Initializing Rallycrash: Server Scripts ---------
+
+--------- Initializing Rallycrash: Client Scripts ---------
+
+--------- Initializing Lighting Systems ---------
+Using Advanced Lighting
+
+
+--------------
+Attempting to set resolution to "1280 720 true 32 60 4"
+Accepted Mode: 
+--Resolution : 1280 720
+--Full Screen : Yes
+--Bits Per Pixel : 32
+--Refresh Rate : 60
+--FSAA Level : 4
+--------------
+GFXPCD3D9Device::reset - depthstencil 25d380 has 2 ref's
+--- Resetting D3D Device ---
+Binding server port to default IP
+UDP initialized on port 0
+ % - Initializing Tools
+ % - Initializing Tools Base
+ % - Initializing Base Editor
+ % - Initializing World Editor
+ % - Initializing Sketch Tool
+ - Initializing Datablock Editor
+ % - Initializing Debugger
+ % - Initializing Decal Editor
+ % - Initializing Forest Editor
+ % - Initializing Gui Editor
+ % - Initializing Material Editor
+ % - Initializing Mesh Road Editor
+ % - Initializing Mission Area Editor
+ % - Initializing Particle Editor
+ % - Initializing Physics Tools
+No physics plugin exists.
+ % - Initializing River Editor
+ - Initializing Road and Path Editor
+ % - Initializing Shape Editor
+Engine initialized...
+Window focus status changed: focus: 1
+AntiAliasing has been disabled; it is not compatible with AdvancedLighting.
+TheoraTexture - Loading file 'art/videos/Output0001-1000.ogv'
+   - Theora: 1920x1080 pixels, 24.00 fps, 4:2:0 format
+   - Vorbis: 2 channels, 44 kHz
+Using Basic Lighting
+GFXPCD3D9Device::reset - depthstencil 25cde0 has 2 ref's
+--- Resetting D3D Device ---
+AntiAliasing has been enabled while running BasicLighting.
+--------------
+Attempting to set resolution to "1280 720 false 32 60 4"
+Accepted Mode: 
+--Resolution : 1280 720
+--Full Screen : No
+--Bits Per Pixel : 32
+--Refresh Rate : 60
+--FSAA Level : 4
+--------------
+Win32Window::setVideoMode - invoking curtain
+GFXPCD3D9Device::reset - depthstencil 25cf20 has 2 ref's
+--- Resetting D3D Device ---
+GFXPCD3D9Device::reset - depthstencil 25d240 has 2 ref's
+--- Resetting D3D Device ---
+Win32Window::WindowProc - resetting device due to window size change.
+GFXPCD3D9Device::reset - depthstencil 25d1a0 has 2 ref's
+--- Resetting D3D Device ---
+Exporting server prefs...
+Starting multiplayer mode
+Binding server port to default IP
+UDP initialized on port 28000
+*** LOADING MISSION: levels/Empty Room.mis
+*** Stage 1 load
+*** Stage 2 load
+*** Mission loaded
+Connect request from: 
+Connection established 3984
+CADD: 3985 local
+*** Sending mission load to client: levels/Empty Room.mis
+Mapping string: ServerMessage to index: 0
+Mapping string: MsgConnectionError to index: 1
+onServerMessage: 
+Mapping string: MsgLoadInfo to index: 2
+onServerMessage: 
+Mapping string: MsgLoadDescripition to index: 3
+onServerMessage: 
+Sending heartbeat to master server [IP:198.101.240.242:28002]
+Mapping string: MsgLoadInfoDone to index: 4
+onServerMessage: 
+Mapping string: MsgClientJoin to index: 5
+Mapping string: Welcome to a Torque application %1. to index: 6
+Mapping string: Visitor to index: 7
+onServerMessage: 
+  +- a: Welcome to a Torque application Visitor.
+Mapping string: MissionStartPhase1 to index: 8
+*** New Mission: levels/Empty Room.mis
+*** Phase 1: Download Datablocks & Targets
+% - PostFX Manager - Executing core/scripts/client/postFx/default.postfxpreset.cs
+% - PostFX Manager - Applying from preset
+% - PostFX Manager - PostFX enabled
+Mapping string: MissionStartPhase1Ack to index: 0
+Received info request from a master server [IP:198.101.240.242:28002].
+Mapping string: MissionStartPhase2 to index: 9
+*** Phase 2: Download Ghost Objects
+Mapping string: MissionStartPhase2Ack to index: 1
+[Material::mapMaterial] - Cannot map unnamed Material
+[Material::mapMaterial] - Cannot map unnamed Material
+C:/Users/Cooper/Desktop/Projects/Torque projects/Torque3D-3-0/Torque3D/My Projects/Rallycrash/game/shaders/procedural/322f599ffe77998e_V.hlsl(51,35): warning X3206: 'mul': implicit truncation of vector type
+Ghost Always objects received.
+Mapping string: MissionStartPhase3 to index: 10
+Client Replication Startup has Happened!
+fxFoliageReplicator - replicated client foliage for 0 objects
+Failed to create resource: [levels/Empty Room.mis.decals]
+*** Phase 3: Mission Lighting
+Mission lighting done
+Mapping string: MissionStartPhase3Ack to index: 2
+Unable to spawn an object without a spawnClass
+Mapping string: MissionStart to index: 11
+*** Initial Control Object
+Activating DirectInput...
+*** Control Object Changed
+TheoraTexture - Loading file 'art/videos/Output0001-1000.ogv'
+   - Theora: 1920x1080 pixels, 24.00 fps, 4:2:0 format
+   - Vorbis: 2 channels, 44 kHz
+*** ENDING MISSION
+CDROP: 3985 
+Exporting server prefs...
+TheoraTexture - Loading file 'art/videos/Output0001-1000.ogv'
+   - Theora: 1920x1080 pixels, 24.00 fps, 4:2:0 format
+   - Vorbis: 2 channels, 44 kHz
+Exporting server prefs...
+Exporting client prefs
+Exporting server prefs
