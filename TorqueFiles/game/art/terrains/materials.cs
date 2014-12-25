@@ -20,3 +20,11 @@
 // IN THE SOFTWARE.
 //-----------------------------------------------------------------------------
 
+
+new TerrainMaterial()
+{
+   diffuseMap = "../../BlenderFiles/textures/Grass";
+   detailMap = "core/art/warnmat";
+   macroMap = "core/art/warnmat";
+   internalName = "Grass";
+};
